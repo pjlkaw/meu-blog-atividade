@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* colors */
+:root {
+    --corPrimaria: #2c2b30;
+    --colorDestaque: #64a191;
+    --colorBranco: #f9f4f0;
+}
+
+/* Gerais */
+a {
+    color: var(--colorDestaque);
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+} a:hover {
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--corPrimaria);
+    color: var(--colorBranco);
+}
+
+/* Divisão de aside e main */
+.page-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.containerWrap{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin:20px 0px;
+}
