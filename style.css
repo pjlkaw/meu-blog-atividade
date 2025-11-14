@@ -84,7 +84,9 @@ header nav {
 }
 
 /* MAIN */
-
+main h2 {
+    margin-top: 20px;
+}
 .intro {
     margin: 20p 0px;
     display: flex;
@@ -92,6 +94,19 @@ header nav {
     gap: 15px;
 }
 
-.imgMain {
-    width: 400px;
+/* post container */
+.blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Primeiro post */
+.firstPost {
+    grid-column: 1/3;
+}
+.firstPost img {
+    width: 100%;
+    height: 500px;
+    margin: 10px 0px;
 }
