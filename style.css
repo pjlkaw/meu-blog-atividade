@@ -12,12 +12,19 @@
     --colorBranco: #f9f4f0;
 }
 
-/* Gerais */
+/* GERAL */
+img {
+    width: 300px;
+    border-radius: 15px;
+}
+
 a {
     color: var(--colorDestaque);
     text-decoration: none;
     transition: all 200ms ease-in-out;
-} a:hover {
+}
+
+a:hover {
     font-weight: bold;
 }
 
@@ -31,18 +38,58 @@ body {
     margin: 0 auto;
     max-width: 1200px;
 }
-
-.containerWrap{
+.containerWrap {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    gap: 40px;
 }
 
-/* Header */
+/* HEADER */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 15px;
-    margin:20px 0px;
+    margin: 20px 0px;
+    padding: 20px;
+    border-bottom: solid white 2px;
+}
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* aside */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.widget ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    left: 50px;
+}
+
+/* MAIN */
+
+.intro {
+    margin: 20p 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.imgMain {
+    width: 400px;
 }
